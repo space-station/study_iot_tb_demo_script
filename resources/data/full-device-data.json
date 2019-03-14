@@ -1,0 +1,15 @@
+{
+  "id":{
+    "entityType": "DEVICE", "id":"73746150-466c-11e9-bd17-4b4d1e98c69a"
+  },
+  "createdTime": 1552576721893,
+  "additionalInfo": null,
+  "tenantId":{
+    "entityType": "TENANT", "id":"38597000-3434-11e9-81f4-fdedce73e42c"
+  },
+  "customerId":{
+    "entityType": "CUSTOMER", "id":"13814000-1dd2-11b2-8080-808080808080"
+  },
+  "name": "test_device_01",
+  "type": "default"
+}
