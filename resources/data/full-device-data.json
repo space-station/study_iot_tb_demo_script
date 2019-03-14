@@ -3,7 +3,9 @@
     "entityType": "DEVICE", "id":"73746150-466c-11e9-bd17-4b4d1e98c69a"
   },
   "createdTime": 1552576721893,
-  "additionalInfo": null,
+  "additionalInfo":{
+    "description": "NO DESCRIPTION"
+  },
   "tenantId":{
     "entityType": "TENANT", "id":"38597000-3434-11e9-81f4-fdedce73e42c"
   },
