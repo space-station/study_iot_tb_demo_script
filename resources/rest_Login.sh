@@ -3,7 +3,10 @@ RESPONSE=`curl -X POST -d @data/user-pwd-data.json "$API_URL" --header 'Content-
 echo $RESPONSE | jq
 
 JWT_TOKEN=`TOKEN_RESPONSE=$RESPONSE node js/parse_token_resp.js`
-echo ===== JWT_TOKEN =====
-echo $JWT_TOKEN
+JWT_REFRESH_TOKEN=`TOKEN_RESPONSE=$RESPONSE node js/parse_refreshToken_resp.js`
+
+#echo ===== JWT_TOKEN =====
+#echo $JWT_TOKEN
 echo =====================
 export JWT_TOKEN
+export JWT_REFRESH_TOKEN
