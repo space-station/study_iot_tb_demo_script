@@ -7,6 +7,12 @@ JWT_REFRESH_TOKEN=`TOKEN_RESPONSE=$RESPONSE node js/parse_refreshToken_resp.js`
 
 #echo ===== JWT_TOKEN =====
 #echo $JWT_TOKEN
+
+TXT=`TOKEN_TXT=$JWT_TOKEN node js/decode_jwt_token.js`
+echo $TXT
+TXT=`TOKEN_TXT=$JWT_REFRESH_TOKEN node js/decode_jwt_token.js`
+echo $TXT
+
 echo =====================
 export JWT_TOKEN
 export JWT_REFRESH_TOKEN
