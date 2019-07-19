@@ -1,0 +1,8 @@
+{
+  "email": "yu.tian@borqs.net",
+  "authority":"CUSTOMER_USER",
+  "customerId": {
+    "entityType":"CUSTOMER",
+    "id": "ab913be0-aa48-11e9-8bb9-7db0b764404d"
+  }
+}
