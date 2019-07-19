@@ -2,6 +2,7 @@ var mqtt = require('mqtt');
 
 console.log('Handling Server Side RPC from %s using access token: %s', process.env.THINGSBOARD_HOST, process.env.DEVICE_ACCESS_TOKEN);
 
+// both 'mqtt' & 'tcp' works here
 var client  = mqtt.connect('mqtt://'+process.env.THINGSBOARD_HOST,{
     username: process.env.DEVICE_ACCESS_TOKEN
 });
