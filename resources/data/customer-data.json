@@ -1,7 +1,3 @@
 {
-  "title": "Customer0x01",
-  "tenantId": {
-   "entityType":"TENANT",
-    "id": "5f201ab0-a471-11e9-bdaa-3b9236e9248c"
-  }
+  "title": "Customer0x01"
 }
