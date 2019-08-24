@@ -1,9 +1,13 @@
 API_URL=${THINGSBOARD_URL}/api/auth/login
-RESPONSE=`curl -X POST -d @data/user-pwd-data.json "$API_URL" --header 'Content-Type: application/json' --header 'Accept: application/json'`
+RESPONSE=`curl -X POST -d @data/user-pwd-data-customer.json "$API_URL" --header 'Content-Type: application/json' --header 'Accept: application/json'`
 echo $RESPONSE | jq
 
 JWT_TOKEN=`TOKEN_RESPONSE=$RESPONSE node js/parse_token_resp.js`
 JWT_REFRESH_TOKEN=`TOKEN_RESPONSE=$RESPONSE node js/parse_refreshToken_resp.js`
+
+echo ===== COPY TOKEN =====
+echo bearer $JWT_TOKEN
+echo
 
 #echo ===== JWT_TOKEN =====
 #echo $JWT_TOKEN
