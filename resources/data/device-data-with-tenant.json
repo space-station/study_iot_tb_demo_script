@@ -1,0 +1,8 @@
+{
+   "tenantId":{
+               "entityType": "TENANT",
+               "id": "5f201ab0-a471-11e9-bdaa-3b9236e9248c"
+             },
+  "name":"test_device_201",
+  "type":"default"
+}
